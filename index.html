@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakshi Mali | Portfolio</title>
+
+ <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family:  'Sora', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+    }
+
+    header h1 { font-size: 26px; }
+    html {
+     scroll-behavior: smooth;
+    }
+
+    nav a {
+      margin-left: 30px;
+      font-weight: 500;
+    }
+
+    /* Hero */
+  .hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.hero h2 span {
+  color: #ff0055;
+}
+
+
+.hero p {
+  font-size: 26px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+
+    /* About */
+  .about {
+  padding: 80px 10%;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+
+    .about img {
+      width: 300px;
+      border-radius: 20px;
+      background: #333;
+      padding: 15px;
+    }
+
+    .about h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .highlight { color: #ff0055; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 30px;
+      margin: 25px 0;
+    }
+
+    .tabs span {
+      cursor: pointer;
+      font-weight: 500;
+      color: #aaa;
+    }
+
+    .tabs span.active {
+      color: #ff0055;
+      border-bottom: 2px solid #ff0055;
+      padding-bottom: 5px;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .tab-content ul li {
+      margin: 10px 0;
+    }
+
+    /* Projects */
+    .projects {
+      padding: 100px 80px;
+    }
+
+    .projects h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #111;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      border: 2px solid #ff0055;
+      border-radius: 8px;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 100px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .contact h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      background: #222;
+      border: none;
+      padding: 15px;
+      color: #fff;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    form button {
+      background: #ff0055;
+      border: none;
+      padding: 14px 40px;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #aaa;
+    }
+
+   @media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Portfolio.</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hello, I'm <span>Sakshi Mali</span></h2>
+  <p>A Software Developer</p>
+</section>
+
+<!-- ABOUT SECTION WITH TABS -->
+<section class="about" id="about">
+  <img src="C:\Users\Win 11\Downloads\Sakshi_Profile.jpg.jpeg" alt="Sakshi Mali">
+
+  <div>
+    <h2>About Me</h2>
+    <p>
+      Recent graduate with strong skills in Java, .NET, and MySQL.
+      Seeking an entry-level position as a Software Developer or Web Developer.
+    </p>
+
+    <div class="tabs">
+      <span class="active" onclick="showTab(event,'skills')">Skills</span>
+      <span onclick="showTab(event,'education')">Education</span>
+      <span onclick="showTab(event,'experience')">Experience</span>
+    </div>
+
+    <div id="skills" class="tab-content active">
+      <ul>
+        <li class="highlight">C++, Java</li>
+        <li class="highlight">HTML, CSS, JavaScript</li>
+        <li class="highlight">Data Structures & Algorithms</li>
+        <li class="highlight">SQL</li>
+        <li class="highlight">.NET</li>
+      </ul>
+    </div>
+
+    <div id="education" class="tab-content">
+      <ul>
+        <li>
+          <strong>Bachelor of Engineering (E&TC)</strong><br>
+          Savitribai Phule Pune University<br>
+          <span style="color:#aaa;">CGPA: 8.71</span>
+        </li>
+        <li>
+          <strong>Diploma in Computer Technology</strong><br>
+          MSBTE<br>
+          <span style="color:#aaa;">79.94%</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="experience" class="tab-content">
+      <ul>
+        <li>
+          <strong>Web Development Intern</strong><br>
+          Innovation Hub Pvt. Ltd., Nashik<br>
+          <span style="color:#aaa;">Dec 2023 – Feb 2024</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="C:\Users\Win 11\Pictures\Screenshots\Screenshot 2026-01-22 123123.png">
+      <p>Portfolio Website</p>
+    </div>
+    <div class="project-card">
+      <img src="https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-f0b1139c-3ed4-4b9a-8b36-53bdf5d6f76b/gettingstartedwithapimapi_960.jpg">
+      <p>Service Management API</p>
+    </div>
+    <div class="project-card">
+      <img src="C:\Users\Win 11\Desktop\img1.png">
+      <p>Milk Dairy Management System</p>
+    </div>
+    <div class="project-card">
+      <img src="C:\Users\Win 11\Desktop\img3.png">
+      <p>Hybrid VAWT & Solar Power System</p>
+    </div>
+  </div>
+
+  <a class="btn" href="#">See More</a>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <h2>Contact Me</h2>
+    <p>Email: sakshimali9552@gmail.com</p>
+    <p>Phone: 9552417690</p>
+    <a class="btn" href="C:\Users\Win 11\Downloads\SakshiMaliResume.pdf">Download Resume</a>
+  </div>
+
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Sakshi Mali. All rights reserved.
+</footer>
+
+<script>
+  function showTab(event, tabId) {
+    const tabs = document.querySelectorAll('.tabs span');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => tab.classList.remove('active'));
+    contents.forEach(content => content.classList.remove('active'));
+
+    event.target.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+  }
+</script>
+
+</body>
+</html>

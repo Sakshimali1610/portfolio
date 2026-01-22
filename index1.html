@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakshi Mali | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Portfolio.</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hello, I'm <span>Sakshi Mali</span></h2>
+  <p>A Software Developer</p>
+</section>
+
+<section class="about" id="about">
+  <img src="C:\Users\Win 11\Desktop\Portfolio\assets\images\Sakshi_Profile.jpg.jpeg" alt="Sakshi Mali">
+
+  <div>
+    <h2>About Me</h2>
+    <p>
+      Recent graduate with strong skills in Java, .NET, and MySQL.
+      Seeking an entry-level position as a Software Developer or Web Developer.
+    </p>
+
+    <div class="tabs">
+      <span class="active" onclick="showTab(event,'skills')">Skills</span>
+      <span onclick="showTab(event,'education')">Education</span>
+      <span onclick="showTab(event,'experience')">Experience</span>
+    </div>
+
+    <div id="skills" class="tab-content active">
+      <ul>
+        <li class="highlight">C++, Java</li>
+        <li class="highlight">HTML, CSS, JavaScript</li>
+        <li class="highlight">Data Structures & Algorithms</li>
+        <li class="highlight">SQL</li>
+        <li class="highlight">.NET</li>
+      </ul>
+    </div>
+
+    <div id="education" class="tab-content">
+      <ul>
+        <li>
+          <strong>Bachelor of Engineering (E&TC)</strong><br>
+          Savitribai Phule Pune University<br>
+          <span class="muted">CGPA: 8.71</span>
+        </li>
+        <li>
+          <strong>Diploma in Computer Technology</strong><br>
+          MSBTE<br>
+          <span class="muted">79.94%</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="experience" class="tab-content">
+      <ul>
+        <li>
+          <strong>Web Development Intern</strong><br>
+          Innovation Hub Pvt. Ltd., Nashik<br>
+          <span class="muted">Dec 2023 – Feb 2024</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="C:\Users\Win 11\Desktop\Portfolio\assets\images\Portfolio.png">
+      <p>Portfolio Website</p>
+    </div>
+
+    <div class="project-card">
+      <img src="C:\Users\Win 11\Desktop\Portfolio\assets\images\Project_2.jpg">
+      <p>Service Management API</p>
+    </div>
+
+      <div class="project-card">
+      <img src="C:\Users\Win 11\Desktop\Portfolio\assets\images\Project_3.png">
+      <p>Milk Dairy Management System</p>
+    </div>
+
+    <div class="project-card">
+      <img src="C:\Users\Win 11\Desktop\Portfolio\assets\images\Project_4.png">
+      <p>Hybrid VAWT & Solar Power System</p>
+    </div>
+  </div>
+  </div>
+
+  <a class="btn" href="#">See More</a>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <h2>Contact Me</h2>
+    <p>Email: sakshimali9552@gmail.com</p>
+    <p>Phone: 9552417690</p>
+    <a class="btn" href="C:\Users\Win 11\Desktop\Portfolio\assets\images\SakshiMaliResume.pdf" download>Download Resume</a>
+  </div>
+
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Sakshi Mali. All rights reserved.
+</footer>
+
+<!-- JS -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
